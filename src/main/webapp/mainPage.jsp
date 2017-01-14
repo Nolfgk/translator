@@ -8,16 +8,21 @@
     <title>Main Page</title>
 </head>
 <body>
-<h1 align="center">Vocabulary</h1>
-<form method="post" accept-charset="UTF-8" action=Vocabulary.do>
-    Type word to translate.
+<img src="images/yandextranslator.jpg" align="right"/>
+<p>
+<img src="images/translator.jpg" align="left"/>
 
+<h1 align="center">Vocabulary</h1>
+
+<form method="post" accept-charset="UTF-8" action=Vocabulary.do>
+    Hello!
+    <p>
+    Type word to translate.
     <label><b>Text to translate</b></label>
     <input type="text" placeholder="Enter text to translate" name="text" required>
-
-    <p/>
+    <p>
     <label><b>Choose translation direction</b></label>
-    <select type="text" name="lang" required>
+    <select name="lang" required>
         <option value="ru-en">ru-en</option>
         <option value="ru-es">ru-es</option>
         <option value="ru-fr">ru-fr</option>
@@ -28,10 +33,12 @@
         <option value="fr-ru">fr-ru</option>
         <option value="fr-es">fr-es</option>
     </select>
-
-    <center>
         <button type="SUBMIT">SUBMIT</button>
-    </center>
 </form>
+
+<p>
+    <a href="http://localhost:34505/registerpage.html">Go to register page.</a>
+<p>
+    <a href="http://localhost:34505/loginpage.html">Go to login page.</a>
 </body>
 </html>

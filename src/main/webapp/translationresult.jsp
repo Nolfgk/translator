@@ -4,7 +4,7 @@
     <title>Translation Result</title>
 </head>
 <body>
-
+<img src="images/translation_result.jpg" align="right"/>
 <H1>Text translated</H1>
 <%
     String text = (String) request.getAttribute("text");

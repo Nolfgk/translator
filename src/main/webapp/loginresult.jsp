@@ -21,8 +21,10 @@
 
 		%>
 <p>
-<a href="http://localhost:34505/mainPage.jsp">Go to main page.</a>
+	<a href="http://localhost:34505/mainPage.jsp">Go to main page.</a>
 <p>
-<a href="http://localhost:34505/loginpage.html">Go to login page.</a>
+	<a href="http://localhost:34505/loginpage.html">Go to login page.</a>
+<p>
+	<a href="http://localhost:34505/registerpage.html">Go to register page.</a>
 </body>
 </html>

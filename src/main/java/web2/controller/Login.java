@@ -10,28 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by timur on 02.01.17.
- */
 public class Login extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
-        //работаем с базой
-//        Session session = HibernateUtil.getSessionFactory().openSession();
-//        session.beginTransaction();
-//
-//        String hql = "FROM web2.hibernate.dto.UserEntity";
-//        Query query = session.createQuery(hql);
-//        List results = query.list();
-//        if (!results.contains(login)){
-//        UserEntity user = new UserEntity(login, password);
-//        session.save(user);
-//        session.getTransaction().commit();
-//        }
-//        HibernateUtil.shutdown();
 
         if(UserChecker.checkUser(login, password)){
             req.setAttribute("login", login);
